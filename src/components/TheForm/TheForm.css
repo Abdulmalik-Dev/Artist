@@ -1,0 +1,34 @@
+.TheForm{
+    padding: var(--padding);
+}
+
+@media(max-width: 678px){
+    .TheForm{
+    }
+}
+
+.TheForm button[type="submit"]{
+    padding: calc(var(--padding) - 10px);
+    background-color: var(--main-color);
+    color: var(--gray-darkest);
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 70%;
+    margin: var(--margin) auto;
+    display: block;
+    transition: var(--main-duration);
+}
+
+.TheForm button[type="submit"]:hover{
+    background-color: black;
+    color: #fff;
+}
+
+@media(max-width: 550px){
+    .TheForm button[type="submit"]{
+        width: 90%;
+    }
+}

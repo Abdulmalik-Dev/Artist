@@ -1,0 +1,13 @@
+.workCollection{
+    background-color: var(--bg-light);
+    padding: calc(var(--padding) * 2) var(--padding);
+}
+
+.workCollection .images{
+    width: 100%;
+    margin-top: calc(var(--margin) * 2);
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}

@@ -1,0 +1,17 @@
+.main-button{
+    padding: calc(var(--padding) / 2);
+    border-radius: 50%;
+    font-size: calc(var(--font-s) + 5px);
+    width: 40px;
+    height: 40px;
+    line-height: 1;
+    border: none;
+    margin-top: var(--margin);
+    transition: var(--main-duration);
+}
+
+.main-button:hover{
+    background-color: var(--main-color) !important;
+    color: #fff !important;
+    transform: translateY(-2px);
+}

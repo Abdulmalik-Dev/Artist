@@ -1,0 +1,21 @@
+.textWithHeading{
+    font-size: calc(var(--font-s) * 2);
+}
+
+@media(max-width: 650px){
+    .textWithHeading {
+        font-size: calc((var(--font-s) * 2) - 10px);
+    }
+}
+
+.textWithHeading span{
+    font-size: var(--font-s);
+    display: block;
+    margin-bottom: calc(var(--margin) * 2);
+    color: var(--main-color);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    font-weight: bold;
+    transition: var(--main-duration);
+}

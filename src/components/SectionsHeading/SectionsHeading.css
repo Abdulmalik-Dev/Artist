@@ -1,0 +1,11 @@
+.sectionsHeading{
+    color: var(--gray-light);
+    font-size: var(--font-s);
+}
+
+.sectionsHeading span{
+    font-size: calc(var(--font-s) * 2);
+    color: var(--gray-darkest);
+    display: block;
+    margin-bottom: var(--margin);
+}

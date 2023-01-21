@@ -1,0 +1,22 @@
+.Social-medai-icon{
+    border-radius: 50%;
+    text-decoration: none;
+    color: var(--gray-darkest);
+    padding: 5px 8px;
+    background-color: var(--bg-light);
+    line-height: 1.2;
+    transition: calc(var(--main-duration) + 0.5s);
+}
+
+.Social-medai-icon span{
+    font-size: calc(var(--font-s) + 8px);
+    transition: calc(var(--main-duration) + 0.5s);
+}
+
+.Social-medai-icon:hover{
+    transform: translateY(-5px);
+}
+
+.Social-medai-icon:hover span{
+    color: var(--main-color);
+}

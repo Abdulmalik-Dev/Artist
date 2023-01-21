@@ -1,0 +1,35 @@
+.TheForm input, .TheForm textarea{
+    margin: 1%;
+    color: var(--gray-dark);
+    padding: calc(var(--padding) - 10px);
+    border: none;
+    outline: none;
+    transition: var(--main-duration);
+}
+
+.TheForm input {
+    height: 50px;
+    width: 48%;
+}
+
+.TheForm textarea{
+    width: 98%;
+    height: 150px;
+    resize: none;
+}
+
+@media(max-width: 600px){
+    .TheForm input, .TheForm textarea{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.TheForm input::placeholder, .TheForm textarea::placeholder{
+    opacity: 0.5;
+}
+
+.TheForm input:focus, .TheForm textarea:focus{
+    box-shadow: 0 2px var(--gray-darkest);
+}

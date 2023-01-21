@@ -1,0 +1,119 @@
+footer{
+    background-color: #000;
+
+}
+
+footer .top {
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+footer .top{
+    color: #fff;
+    border-bottom: 1px solid var(--gray-light);
+    padding-bottom: calc(var(--padding) * 2);
+}
+
+@media(max-width: 768px){
+    footer .top{
+        flex-direction: column;
+    }
+}
+
+footer .top .text {
+    flex: 1 60%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+@media(max-width: 991px){
+    footer .top .text{
+        flex-direction: column;
+        gap: 30px;
+        flex-basis: 50%;
+    }
+}
+
+@media(max-width: 768px){
+    footer .top .text{
+        align-items: center;
+    }
+}
+
+footer .top .text p span{
+    color: #fff;
+}
+
+footer .top .newsArea{
+    flex: 1 40%;
+
+}
+
+@media(max-width: 991px){
+    footer .top .newsArea{
+        flex-basis: 50%;
+    }
+}
+
+footer .newsArea form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer .newsArea form label{
+    font-size: calc(var(--font-s) + 5px);
+}
+
+footer .newsArea form input{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+    padding: var(--padding);
+    padding-bottom: 5px;
+    color: white;
+}
+
+footer .newsArea form button{
+    border: none;
+    outline: none;
+    padding: var(--padding);
+    border-radius: 30px;
+    color: var(--gray-darkest);
+    cursor: pointer;
+    margin-top: var(--margin);
+    transition: var(--main-duration);
+}
+
+footer .newsArea form button:hover{
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+footer .bottom{
+    flex: 1;
+    color: var(--gray-light);
+    padding: calc(var(--padding) * 2) 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media(max-width: 768px){
+    footer .bottom{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+footer .bottom > p{
+    text-align: center;
+}
+
+footer .bottom .iconsArea{
+    display: flex;
+    gap: 10px;
+}
