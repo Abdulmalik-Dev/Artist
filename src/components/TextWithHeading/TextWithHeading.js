@@ -2,10 +2,10 @@ import "./TextWithHeading.css";
 
 const TextWithHeading = (props) => {
   return (
-    <p className="textWithHeading" style={{ color: props.color }}>
+    <div className="textWithHeading" style={{ color: props.color }}>
       <span>{props.topText}</span>
-      {props.children}
-    </p>
+      <p>{props.children}</p>
+    </div>
   );
 };
 

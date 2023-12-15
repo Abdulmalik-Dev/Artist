@@ -18,4 +18,29 @@
     word-spacing: 5px;
     font-weight: bold;
     transition: var(--main-duration);
+    animation: fadeIn ease-in 1s .5s;
+}
+
+.textWithHeading p{
+    animation: p-animation ease-in .6s .5s;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes p-animation {
+    from{
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

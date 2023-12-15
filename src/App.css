@@ -20,3 +20,17 @@ body{
     font-family: 'Roboto Slab', serif;
     background-color: #F4F4F4;
 }
+
+::selection{
+    background-color: var(--main-color);
+    color: #ffff;
+}
+
+::-webkit-scrollbar{
+    background-color: #ffff;
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+    border-radius: 10px;
+}
